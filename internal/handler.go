@@ -63,3 +63,9 @@ func (h *Handler) IngestEvent(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "Event ingested successfully"})
 }
+
+
+
+func (h *Handler) GetHealth(c *gin.Context) {
+	
+}	

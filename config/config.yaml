@@ -1,0 +1,13 @@
+kafka:
+  brokers:
+  - "localhost:9092"
+  topic:
+  - "login_events"
+
+auth:
+  api_key:
+  - "my-api-key"  
+
+server:
+  port:
+  - "8080"

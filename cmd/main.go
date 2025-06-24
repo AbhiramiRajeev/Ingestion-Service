@@ -24,6 +24,7 @@ func main() {
 	h := internal.NewHandler(producer, apiKey)
 
 	r.POST("/ingest", h.IngestEvent)
+	r.GET("/health", h.GetHealth)
 
 	defer func() {
 		if err := producer.Close(); err != nil {
